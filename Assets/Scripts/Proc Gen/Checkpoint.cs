@@ -12,8 +12,8 @@ public class Checkpoint : MonoBehaviour
 
     void Start()
     {
-        gameManager = FindFirstObjectByType<GameManager>();
-        obstacleSpawner = FindFirstObjectByType<ObstacleSpawner>();
+        gameManager = FindAnyObjectByType<GameManager>();
+        obstacleSpawner = FindAnyObjectByType<ObstacleSpawner>();
     }
 
     void OnTriggerEnter(Collider other) 
